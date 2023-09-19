@@ -1,0 +1,11 @@
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.csproj.AssemblyReference.cache
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.Languages.App.de.resources
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.Languages.App.en.resources
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.csproj.GenerateResource.cache
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.AssemblyInfoInputs.cache
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.AssemblyInfo.cs
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.csproj.CoreCompileInputs.cache
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.RazorAssemblyInfo.cache
+C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\obj\Debug\net7.0\ArvatoSE.RazorAssemblyInfo.cs

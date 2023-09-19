@@ -1,0 +1,65 @@
+﻿@page
+@using Microsoft.Extensions.Localization;
+@using ArvatoSE.Core.Services;
+@using ArvatoSE;
+@inject IStringLocalizer<App> localizer
+@model ArvatoSE.Pages.Account.LoginModel
+@{
+    Layout = null;
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablebricks - Login</title>
+
+    <link rel="shortcut icon" href="/assets/img/logo/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/app.css" />
+    <link rel="stylesheet" href="/assets/css/auth.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/lib/bootstrap-icons/bootstrap-icons.css" />
+
+    <link href="/site.webmanifest" rel="manifest" />
+</head>
+
+<body class="login-background">
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-lg-4">
+                <div class="login loginbox p-4">
+                    <a href="/" class="text-center mb-4 text-decoration-none"><h1 class="text-white">Tablebricks</h1></a>
+                    <h2 class="text-center mb-4 text-white">@localizer["LOGIN"]</h2>
+                    <form method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="form-group mb-4">
+                            <input asp-for="Input.Username" type="text" class="form-control" placeholder="@localizer["USERNAME"]">
+                            <span asp-validation-for="Input.Username" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input asp-for="Input.Password" type="password" class="form-control" placeholder="@localizer["PASSWORD"]">
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input asp-for="Input.RememberMe" class="form-check-input" id="rememberMe">
+                            <label asp-for="Input.RememberMe" class="form-check-label">
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
+                        <button class="btn btn-primary btn-block btn-lg shadow-lg">Anmelden</button>
+                        <div class="text-center">
+                            <a href="registration.php">Create an account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>

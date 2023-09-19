@@ -1,0 +1,24 @@
+.login-background {
+    background: url("/assets/img/background/login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+
+.loginbox {
+    width: 320px;
+    height: auto;
+    background: #2e2e2e;
+    opacity: 0.9;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

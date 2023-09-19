@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ArvatoSE
+build_property.RootNamespace = ArvatoSE
+build_property.ProjectDir = C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\tomsa\source\repos\ArvatoSE\ArvatoSE
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Components/CultureSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDdWx0dXJlU2VsZWN0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Components/Modals/ConfirmModal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbHNcQ29uZmlybU1vZGFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Components/Modals/Modal.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbHNcTW9kYWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/Account/AccountDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxBY2NvdW50RGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/Admin/UserManagement.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlck1hbmFnZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Components/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-j7te3tm4gr
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Components/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ziz6gbc082
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomsa/source/repos/ArvatoSE/ArvatoSE/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
