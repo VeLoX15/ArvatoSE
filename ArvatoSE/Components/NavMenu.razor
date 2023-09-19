@@ -1,34 +1,70 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ArvatoSE</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿@using System.Runtime.InteropServices
+@inject IStringLocalizer<App> localizer
+
+<h3 class="text-center">@localizer["TABLEBRICKS_UPPER"]</h3>
+
+<ul class="menu">
+    <li class="sidebar-item">
+        <NavLink href="/" class="sidebar-link blazor-link" Match="NavLinkMatch.All">
+            <i class="fa-solid fa-house"></i>
+            <span>@localizer["HOME"]</span>
+        </NavLink>
+    </li>
+
+
+    <li class="sidebar-title">@localizer["INFO"]</li>
+
+    <AuthorizeView Roles="@($"{Roles.VIEW_USERS}")">
+        <Authorized>
+            <li class="sidebar-title">@localizer["ADMIN"]</li>
+        </Authorized>
+    </AuthorizeView>
+
+    <AuthorizeView Roles="@(Roles.VIEW_USERS)">
+        <Authorized>
+            <li class="sidebar-item">
+                <NavLink href="/Administration/Users" class="sidebar-link blazor-link" Match="NavLinkMatch.All">
+                    <i class="fa-solid fa-users"></i>
+                    <span>@localizer["USERS"]</span>
+                </NavLink>
+            </li>
+        </Authorized>
+    </AuthorizeView>
+
+    <li class="sidebar-title">@localizer["ACCOUNT"]</li>
+    <AuthorizeView>
+        <Authorized>
+            <li class="sidebar-item">
+                <NavLink href="/Account/Profile" class="sidebar-link blazor-link" Match="NavLinkMatch.All">
+                    <i class="fa-solid fa-user"></i>
+                    <span>@localizer["PROFILE"]</span>
+                </NavLink>
+            </li>
+
+            <li class="sidebar-item">
+                <form method="post" action="/Account/Logout">
+                    <button type="submit" class="btn btn-danger btn-block text-left sidebar-link logout-button">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>@localizer["LOGOUT"]</span>
+                    </button>
+                </form>
+            </li>
+
+        </Authorized>
+        <NotAuthorized>
+            <li class="sidebar-item">
+                <NavLink href="/Account/Login" class="sidebar-link blazor-link" Match="NavLinkMatch.All">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>@localizer["LOGIN"]</span>
+                </NavLink>
+            </li>
+        </NotAuthorized>
+    </AuthorizeView>
+
+</ul>
+
+<div class="d-flex justify-content-center pb-5">
+    <div class="culture-wrapper">
+        <CultureSelector />
     </div>
 </div>
-
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
